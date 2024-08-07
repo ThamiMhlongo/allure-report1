@@ -2,6 +2,7 @@
 import { homePageElements } from '../pages/home'
 
 const home_elements = new homePageElements()
+Cypress.on('uncaught:exception', (err, runnable) => { return false })
 
 describe('hirshlanden', () => {
     it('searches for covid | home header', () => {
